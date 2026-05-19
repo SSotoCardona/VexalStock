@@ -2,7 +2,10 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+<<<<<<< HEAD
       <profile default="true" name="Default" enabled="true" />
+=======
+>>>>>>> 1036410d51d2549b1d6af1f3de3eb884d386f849
       <profile name="Annotation profile for clothing-store" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
