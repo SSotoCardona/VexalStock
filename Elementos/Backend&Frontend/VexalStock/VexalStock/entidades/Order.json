@@ -1,0 +1,76 @@
+{
+  "name": "Order",
+  "type": "object",
+  "properties": {
+    "buyer_email": {
+      "type": "string",
+      "description": "Email del comprador"
+    },
+    "buyer_name": {
+      "type": "string",
+      "description": "Nombre del comprador"
+    },
+    "seller_email": {
+      "type": "string",
+      "description": "Email del vendedor"
+    },
+    "items": {
+      "type": "array",
+      "description": "Productos en la orden",
+      "items": {
+        "type": "object",
+        "properties": {
+          "product_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "image": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "total": {
+      "type": "number",
+      "description": "Total de la orden"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pendiente",
+        "confirmado",
+        "enviado",
+        "entregado",
+        "cancelado"
+      ],
+      "default": "pendiente",
+      "description": "Estado de la orden"
+    },
+    "shipping_address": {
+      "type": "string",
+      "description": "Direcci\u00f3n de env\u00edo"
+    },
+    "shipping_city": {
+      "type": "string",
+      "description": "Ciudad de env\u00edo"
+    },
+    "shipping_phone": {
+      "type": "string",
+      "description": "Tel\u00e9fono de contacto"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Notas adicionales"
+    }
+  },
+  "required": [
+    "buyer_email",
+    "items",
+    "total"
+  ]
+}

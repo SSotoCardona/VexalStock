@@ -1,0 +1,40 @@
+{
+  "name": "Message",
+  "type": "object",
+  "properties": {
+    "sender_email": {
+      "type": "string",
+      "description": "Email del remitente"
+    },
+    "sender_name": {
+      "type": "string",
+      "description": "Nombre del remitente"
+    },
+    "receiver_email": {
+      "type": "string",
+      "description": "Email del destinatario"
+    },
+    "product_id": {
+      "type": "string",
+      "description": "ID del producto relacionado"
+    },
+    "product_title": {
+      "type": "string",
+      "description": "T\u00edtulo del producto relacionado"
+    },
+    "content": {
+      "type": "string",
+      "description": "Contenido del mensaje"
+    },
+    "is_read": {
+      "type": "boolean",
+      "default": false,
+      "description": "Si el mensaje fue le\u00eddo"
+    }
+  },
+  "required": [
+    "sender_email",
+    "receiver_email",
+    "content"
+  ]
+}

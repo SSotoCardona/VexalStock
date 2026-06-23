@@ -1,0 +1,117 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Nombre del producto"
+    },
+    "description": {
+      "type": "string",
+      "description": "Descripci\u00f3n detallada del producto"
+    },
+    "price": {
+      "type": "number",
+      "description": "Precio en USD"
+    },
+    "original_price": {
+      "type": "number",
+      "description": "Precio original del producto"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "camisetas",
+        "pantalones",
+        "vestidos",
+        "chaquetas",
+        "zapatos",
+        "accesorios",
+        "faldas",
+        "sudaderas",
+        "camisas",
+        "otros"
+      ],
+      "description": "Categor\u00eda del producto"
+    },
+    "size": {
+      "type": "string",
+      "enum": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "\u00danico"
+      ],
+      "description": "Talla del producto"
+    },
+    "condition": {
+      "type": "string",
+      "enum": [
+        "nuevo_con_etiqueta",
+        "como_nuevo",
+        "buen_estado",
+        "uso_visible",
+        "para_reparar"
+      ],
+      "description": "Estado del producto"
+    },
+    "brand": {
+      "type": "string",
+      "description": "Marca del producto"
+    },
+    "color": {
+      "type": "string",
+      "description": "Color principal"
+    },
+    "gender": {
+      "type": "string",
+      "enum": [
+        "mujer",
+        "hombre",
+        "unisex",
+        "ni\u00f1os"
+      ],
+      "description": "G\u00e9nero objetivo"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "URLs de las im\u00e1genes del producto"
+    },
+    "seller_email": {
+      "type": "string",
+      "description": "Email del vendedor"
+    },
+    "seller_name": {
+      "type": "string",
+      "description": "Nombre del vendedor"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "disponible",
+        "reservado",
+        "vendido"
+      ],
+      "default": "disponible",
+      "description": "Estado de venta"
+    },
+    "views": {
+      "type": "number",
+      "default": 0,
+      "description": "N\u00famero de vistas"
+    }
+  },
+  "required": [
+    "title",
+    "price",
+    "category",
+    "size",
+    "condition"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "CartItem",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "Email del usuario"
+    },
+    "product_id": {
+      "type": "string",
+      "description": "ID del producto"
+    },
+    "title": {
+      "type": "string",
+      "description": "Nombre del producto"
+    },
+    "price": {
+      "type": "number",
+      "description": "Precio del producto"
+    },
+    "image": {
+      "type": "string",
+      "description": "Imagen del producto"
+    },
+    "size": {
+      "type": "string",
+      "description": "Talla seleccionada"
+    }
+  },
+  "required": [
+    "user_email",
+    "product_id"
+  ]
+}

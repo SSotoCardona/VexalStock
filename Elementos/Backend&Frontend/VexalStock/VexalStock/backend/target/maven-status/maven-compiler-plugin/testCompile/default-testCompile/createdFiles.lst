@@ -1,0 +1,5 @@
+com\vexalstock\backend\service\MessageServiceTest.class
+com\vexalstock\backend\service\CartServiceTest.class
+com\vexalstock\backend\service\OrderServiceTest.class
+com\vexalstock\backend\service\ProductServiceTest.class
+com\vexalstock\backend\service\ReviewServiceTest.class

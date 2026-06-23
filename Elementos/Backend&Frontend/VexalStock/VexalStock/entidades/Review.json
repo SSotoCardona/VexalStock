@@ -1,0 +1,34 @@
+{
+  "name": "Review",
+  "type": "object",
+  "properties": {
+    "product_id": {
+      "type": "string",
+      "description": "ID del producto"
+    },
+    "reviewer_email": {
+      "type": "string",
+      "description": "Email del reviewer"
+    },
+    "reviewer_name": {
+      "type": "string",
+      "description": "Nombre del reviewer"
+    },
+    "rating": {
+      "type": "number",
+      "description": "Calificaci\u00f3n de 1 a 5"
+    },
+    "comment": {
+      "type": "string",
+      "description": "Comentario de la rese\u00f1a"
+    },
+    "seller_email": {
+      "type": "string",
+      "description": "Email del vendedor rese\u00f1ado"
+    }
+  },
+  "required": [
+    "product_id",
+    "rating"
+  ]
+}
